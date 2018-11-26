@@ -4,10 +4,14 @@
 body {
   background-color: #f2f2f2;
   color: #333;
-  font-family: "Lato";
+  font-family: "Raleway";
 }
 
-h3 {
+a {
+  text-decoration: none;
+}
+
+.headline {
   font-size: 24px;
   text-align: center;
 }
@@ -38,7 +42,7 @@ h3 {
   margin-top: 85px;
 }
 
-.inner-section {
+.inner {
   width: 1100px;
   margin: 0 auto;
 }
@@ -54,13 +58,13 @@ h3 {
   z-index: 10;
 }
 
-.header-inner {
-  width: 1100px;
-  margin: 0 auto;
-}
-
 .contact-btn {
   padding: 14px 12px;
+  color: #fff;
+}
+
+.contact-btn a {
+  color: #fff;
 }
 
 .site-icon {
@@ -113,7 +117,7 @@ h3 {
 
 }
 
-.desc-text h3 {
+.desc-text .headline {
   margin-bottom: 35px;
 }
 
@@ -123,34 +127,33 @@ h3 {
   padding-bottom: 70px;
 }
 
-.latest-work h3 {
+.latest-work .headline {
   margin-bottom: 40px;
 }
 
-.lw-img {
+
+.lw-imgs a {
+  display: inline-block;
   margin-left: 100px;
   opacity: 0.7;
   transition: opacity 0.3s;
+  margin-bottom: 80px
 }
 
-.lw-img:hover {
+.lw-imgs a:hover {
   opacity: 1;
 }
 
-.lw-row {
+.works {
   font-size: 0;
 }
 
-.lw-row:first-child {
-  margin-bottom: 80px;
-}
-
-.lw-img:first-child {
+.lw-imgs a:nth-child(3n + 1) {
   margin-left: 0;
 }
 
 .email-me {
-  margin-top: 90px;
+  margin-top: 10px;
 }
 
 .email-text {
@@ -161,7 +164,7 @@ h3 {
 }
 
 .mail-btn {
-  display: right;
+  display: inline-block;
   padding: 14px 20px;
   transition: color 0.3s;
 }
@@ -191,23 +194,21 @@ h3 {
 
 .param {
   width: 25%;
-  display: inline-block;
-}
-
-.circle {
   text-align: center;
+  display: inline-block;
 }
 
 /* sns */
 .sns {
   padding: 200px 0;
-  font-size: 40px;
+  font-size: 0;
   text-align: center;
 }
 
 .sns-btn {
   width: 185px;
   padding: 25px 0;
+  font-size: 40px;
   display: inline-block;
   cursor: pointer;
   color: #74cfae;
@@ -220,11 +221,6 @@ h3 {
 
 
 /* footer */
-.inner-footer {
-  width: 1100px;
-  margin: 0 auto;
-}
-
 .theme-footer {
   background-color: #74cfae;
   color: #fff;

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <meta name="descriotion" content="This is my portfolio site.">
-    <meta name="keywords" content=" bolt, bootstrap, portfolio">
+    <meta name="keywords" content="bolt, bootstrap, portfolio">
     <title>Bolt - Free Bootstrap 3 Theme</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
@@ -15,11 +15,11 @@
   </head>
   <body>
     <header class="theme-header">
-      <div class="header-inner">
+      <div class="inner clear-fix">
         <div class="site-icon"><i class="fa fa-bolt"></i></div>
         <nav class="nav-menu">
           <ul class="contact-btn cv-btn">
-            <li>Contact</li>
+            <a href="#"><li>Contact</li></a>
           </ul>
         </nav>
       </div>
@@ -27,92 +27,91 @@
 
     <main class="theme-main">
       <section class="theme-title">
-        <div class="inner-section">
+        <div class="inner">
           <h1 class="theme">Bolt Theme</h1>
-          <h2 class="theme-sub">FREE BOOTSTRAP THEMES</h2>
+          <p class="theme-sub">FREE BOOTSTRAP THEMES</p>
         </div>
       </section>
       <section class="theme-desc">
-        <div class="inner-section clear-fix">
+        <div class="inner clear-fix">
           <div class="img-box">
             <img src="./img/iphone.png" alt="iphone" class="iphone-img">
           </div>
           <div class="desc-text">
-            <h3>WHAT CAN WE DO?</h3>
+            <h2 class="headline">WHAT CAN WE DO?</h2>
             <p class="bolt-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
           </div>
         </div>
       </section>
       <section class="latest-work">
-        <div class="inner-section">
-          <h3>OUR LATEST WORK</h3>
+        <div class="inner">
+          <h2 class="headline">OUR LATEST WORK</h2>
           <div class="works">
-            <div class="lw-row">
-              <img class="lw-img" src="./img/01.jpg" alt="">
-              <img class="lw-img" src="./img/02.jpg" alt="">
-              <img class="lw-img" src="./img/03.jpg" alt="">
-            </div>
-            <div class="lw-row">
-              <img class="lw-img" src="./img/04.jpg" alt="">
-              <img class="lw-img" src="./img/05.jpg" alt="">
-              <img class="lw-img" src="./img/06.jpg" alt="">
+            <div class="lw-imgs">
+              <a href="#">
+                <img class="lw-img" src="./img/01.jpg" alt="">
+              </a>
+              <a href="#">
+                <img class="lw-img" src="./img/02.jpg" alt="">
+              </a>
+              <a href="#">
+                <img class="lw-img" src="./img/03.jpg" alt="">
+              <a href="#">
+                <img class="lw-img" src="./img/04.jpg" alt="">
+              </a>
+              <a href="#">
+                <img class="lw-img" src="./img/05.jpg" alt="">
+              </a>
+              <a href="#">
+                <img class="lw-img" src="./img/06.jpg" alt="">
+              </a>
             </div>
           </div>
-          <div class="email-me">
+          <div class="email-me clear-fix">
             <div class="email-text">
               <p class="bolt-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
             </div>
-            <button class="cv-btn mail-btn">Email Me!</button>
+            <a class="cv-btn mail-btn" href="#">Email Me!</a>
           </div>
         </div>
       </section>
       <section class="our-skills">
-        <div class="inner-section">
-          <h3>OUR SKILLS</h3>
+        <div class="inner">
+          <h2 class="headline">OUR SKILLS</h2>
           <div class="os-row">
             <figure class="param">
-              <div class="circle">
-                <img src="./img/circle_01.png" alt="">
-              </div>
+              <img src="./img/circle_01.png" alt="">
               <figcaption>JavaScript</figcaption>
             </figure>
             <figure class="param">
-              <div class="circle">
-                <img src="./img/circle_02.png" alt="">
-              </div>
+              <img src="./img/circle_02.png" alt="">
               <figcaption>Bootstrap</figcaption>
             </figure>
             <figure class="param">
-              <div class="circle">
               <img src="./img/circle_03.png" alt="">
-              </div>
               <figcaption>Wordpress</figcaption>
             </figure>
             <figure class="param">
-              <div class="circle">
                 <img src="./img/circle_04.png" alt="">
-              </div>
               <figcaption>Photoshop</figcaption>
             </figure>
           </div>
         </div>
       </section>
       <section class="sns">
-        <div class="inner-section">
+        <div class="inner">
           <div class="sns-links">
-            <div class="sns-btn"><i class="fa fa-facebook"></i></div>
-            <div class="sns-btn"><i class="fa fa-dribbble"></i></div>
-            <div class="sns-btn"><i class="fa fa-twitter"></i></div>
-            <div class="sns-btn"><i class="fa fa-envelope"></i></div>
+            <a class="sns-btn"><i class="fa fa-facebook"></i></a>
+            <a class="sns-btn"><i class="fa fa-dribbble"></i></a>
+            <a class="sns-btn"><i class="fa fa-twitter"></i></a>
+            <a class="sns-btn"><i class="fa fa-envelope"></i></a>
           </div>
         </div>
       </section>
     </main>
     <footer class="theme-footer">
-      <div class="inner-footer">
-        <div class="footer-text">
-          <p>Crafted with<i class="fas fa-heart"></i>by BlackTie.co.</p>
-        </div>
+      <div class="inner">
+        <p class="footer-text">Crafted with<i class="fa fa-heart"></i>by BlackTie.co.</p>
       </div>
     </footer>
     <script src="js/script.js"></script>
