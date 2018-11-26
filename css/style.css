@@ -264,12 +264,21 @@ a {
   /* latest-work */
   .lw-imgs a {
     display: block;
+    width: 300px;
     margin: 0 auto;
     text-align: center;
   }
 
+  .lw-imgs a:nth-child(3n + 1) {
+    margin: 0 auto;
+  }
+
   .lw-imgs a:nth-child(3n) {
     margin-bottom: 80px;
+  }
+
+  .lw-imgs a:last-child {
+    margin-bottom: 0;
   }
 
   .email-me {
@@ -291,6 +300,10 @@ a {
     display: block;
     margin: 0 auto;
     margin-top: 88px;
+  }
+
+  .param:first-child {
+    margin-top: 0;
   }
 }
 
@@ -376,9 +389,6 @@ a {
     width: 100%;
   }
 
-  .param:first-child {
-    margin-top: 10px;
-  }
 
   /* sns */
   .sns {
