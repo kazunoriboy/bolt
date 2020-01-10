@@ -53,6 +53,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 15px;
 }
 
 .logo {
@@ -62,6 +63,10 @@ body {
 
 .contact-btn {
     padding: 14px 12px;
+}
+
+.humburger-menu {
+    display: none;
 }
 
 /***** main *****/
@@ -304,5 +309,58 @@ body {
 
     .skills-section__content:first-child {
         margin-top: 0;
+    }
+}
+
+/**************************
+    smartphone-size 
+**************************/
+
+@media screen and (max-width: 767px) {
+    /***** header *****/
+    .contact-btn {
+        display: none;
+    }
+
+    .humburger-menu {
+        display: inline-block;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        color: #ddd;
+    }
+
+    .humburger-border {
+        display: block;
+        width: 28px;
+        height: 1px;
+        border-top: 2px solid #ddd;
+        margin-top: 4px;
+    }
+
+    .humburger-border:first-child {
+        margin-top: 0;
+    }
+
+    /***** first-view *****/
+    .first-view .inner {
+        padding: 160px 0 130px;
+    }
+
+    .theme-title {
+        font-size: 80px;
+    }
+
+    /***** sns-section *****/
+    .sns-section .inner {
+        padding: 50px 0;
+    }
+    .sns-section__icons-wrapper {
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+
+    .sns-icon {
+        width: 100%;
     }
 }
