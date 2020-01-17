@@ -147,7 +147,7 @@ body {
 }
 
 .works-section__image:nth-child(1),
-.works-section__image:nth-child(4n) {
+.works-section__image:nth-child(3n+1) {
     margin-left: 0;
 }
 
